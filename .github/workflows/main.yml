@@ -1,12 +1,11 @@
 
 
+
 name: python script
 
 on:
   schedule:
-    - cron: "0 0,4,8,12,16,20 * * *"
-    - cron: "20 1,5,9,13,17,21 * * *"
-    - cron: "40 2,6,10,14,18,22 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
